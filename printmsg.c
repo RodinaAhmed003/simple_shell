@@ -1,27 +1,27 @@
 #include "shell.h"
 /**
- * message - Print message to stdout
- * @msg: The message to be printed
- *
- * Return: void
- */
+* message - Print message to stdout
+* @msg: The message to be printed
+*
+* Return: void
+*/
 void message(const char *msg)
 {
-    printf("%s", msg);
+printf("%s", msg);
 }
 char **en;
 /**
- * print_en - Print the environment
- *
- * Return: void
- */
+* print_en - Print the environment
+*
+* Return: void
+*/
 void print_en(void)
 {
-    int i = 0;
+int i = 0;
 
-    while (en [i] != NULL)
-    {
-        printf("%s\n", en [i]);
-        i++;
-    }
+while (en [i] != NULL)
+{
+printf("%s\n", en [i]);
+i++;
+}
 }
