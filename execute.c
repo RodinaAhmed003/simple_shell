@@ -42,11 +42,10 @@ perror("Error Message in execve");
 exit(EXIT_FAILURE);
 }
 }
-        else
-        {
-            wait(&stat);
-        }
-    }
-
-    free(arr);
+else
+{
+wait(&stat);
+}
+}
+free(arr);
 }
