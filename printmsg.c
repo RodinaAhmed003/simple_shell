@@ -1,5 +1,5 @@
 #include "shell.h"
-
+char **en;
 /**
  * print_en - Print the environment
  *
