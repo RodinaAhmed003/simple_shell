@@ -1,4 +1,14 @@
 #include "shell.h"
+/**
+ * message - Print message to stdout
+ * @msg: The message to be printed
+ *
+ * Return: void
+ */
+void message(const char *msg)
+{
+    printf("%s", msg);
+}
 char **en;
 /**
  * print_en - Print the environment
