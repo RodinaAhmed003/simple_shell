@@ -6,7 +6,7 @@
  *
  * Return: void
  */
-void execute(char *input)
+void executemsg(const char *input)
 {
     char *take_it;
     int i = 0, stat = 0;
