@@ -1,23 +1,23 @@
 #include "shell.h"
 #include "main.h"
 /**
- * main - Entry for the shell
- *
- * Return: Always 0 on success
- */
+* main - Entry for the shell
+*
+* Return: Always 0 on success
+*/
 int main(void)
 {
-    size_t buff_s = 0;
-    char *buff = NULL;
+size_t buff_s = 0;
+char *buff = NULL;
 
-    while (1)
-    {
-        message("#cisfun$ ");
-        getline(&buff, &buff_s, stdin);
+while (1)
+{
+message("#cisfun$ ");
+getline(&buff, &buff_s, stdin);
 
-        buff[strcspn(buff, "\n")] = '\0';
+buff[strcspn(buff, "\n")] = '\0';
 
-        if (strcmp(buff, "exit") == 0)
+if (strcmp(buff, "exit") == 0)
         {
             message("Exit\n");
             free(buff);
