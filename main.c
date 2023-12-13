@@ -14,13 +14,11 @@ while (1)
 {
 message("#cisfun$ ");
 getline(&buff, &buff_s, stdin);
-
 buff[strcspn(buff, "\n")] = '\0';
-
 if (strcmp(buff, "exit") == 0)
-        {
-            message("Exit\n");
-            free(buff);
+{
+message("Exit\n");
+free(buff);
             exit(EXIT_SUCCESS);
         }
 
