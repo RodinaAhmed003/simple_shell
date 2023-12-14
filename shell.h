@@ -32,8 +32,6 @@ void sh_getFull(char *FullCmd, char *myCmd, char *cmdDir);
 int is_postive(char *s);
 int sh_atoi(char *s);
 /*builtin*/
-int sh_builtin_check(char *cmd);
-void sh_builtin_handle(char **cmd, char **argv, int *status, int index);
 void exit_my_shell(char **cmd, char **argv, int *status, int index);
 void sh_print_env(char **cmd, int *status);
 /*error*/
