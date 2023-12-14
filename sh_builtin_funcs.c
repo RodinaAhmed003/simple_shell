@@ -34,7 +34,7 @@ exit_my_shell(cmd, argv, status, index);
 }
 else if (str_compare3(cmd[0], "env") == 0)
 {
-my_print_env(cmd, status);
+sh_print_env(cmd, status);
 }
 }
 /**
@@ -58,7 +58,7 @@ my_exit_value = sh_atoi(cmd[1]);
 else
 {
 index_s = sh_itoa(index);
-sh_writeErr(argv, index_s, my_msg, cmd);
+sh_writeEr(argv, index_s, my_msg, cmd);
 free(index_s);
 sh_FreeArrOfstring
 (*status) = 2;
