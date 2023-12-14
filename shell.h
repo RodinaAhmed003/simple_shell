@@ -1,5 +1,7 @@
 #ifndef SHELL_H_
 #define SHELL_H_
+#ifndef STR_UTILS_H
+#define STR_UTILS_H
 
 #include <stdio.h>
 #include <stdlib.h>
