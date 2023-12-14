@@ -17,7 +17,7 @@ int main(int ac, char **argv)
 
 	while (1)
 	{
-		myLine = my_cmd_read();
+		myLine = sh_read();
 		if (myLine == NULL)
 		{
 			if (isatty(STDIN_FILENO))
