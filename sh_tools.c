@@ -1,12 +1,12 @@
 #include "shell.h"
 /**
- * sh_FreeArrOftring - execute cmd
+ * sh_FreeArrOfstring - execute cmd
  *
  * @myArr: char ptr parameter
  *
  * Return: void
  */
-void sh_FreeArrOfString(char **myArr)
+void sh_FreeArrOfstring(char **myArr)
 {
 	int i;
 
