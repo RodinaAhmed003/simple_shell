@@ -36,7 +36,7 @@ return (pstr_duplicate);
 *
 * Return: str compare result
 */
-int str_compar3(char *str1, char *str2, char *str3)
+int str_compar3(char *str1, char *str2)
 {
 while (*str1 && *str2 && (*str1 == *str2))
 {
