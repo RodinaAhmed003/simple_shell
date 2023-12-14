@@ -18,7 +18,7 @@ fullCmd = sh_getpath(myCmd[0]);
 if (fullCmd == NULL)
 {
 sh_printerror(argv[0], myCmd[0], index);
-		sh_FreeArrOfString
+		sh_FreeArrOfstring
 return (108);
 }
 
@@ -29,13 +29,11 @@ if (myChild == 0)
 if (execve(fullCmd, myCmd, environ) == -1)
 {
 free(fullCmd), fullCmd = NULL;
-			sh_FreeArrOfString
 }
 }
 else
 {
 waitpid(myChild, &status, 0);
-		sh_FreeArrOfString
 free(fullCmd), fullCmd = NULL;
 }
 return (WEXITSTATUS(status));
