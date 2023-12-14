@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * sh_FreeArrOfString - execute cmd
+ * sh_FreeArrOftring - execute cmd
  *
  * @myArr: char ptr parameter
  *
