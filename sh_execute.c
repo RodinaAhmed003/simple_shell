@@ -16,7 +16,7 @@ char *fullCmd;
 fullCmd = sh_getpath(myCmd[0]);
 if (fullCmd == NULL)
 {
-sh_printerror(argv[0], myCmd[0], index);	sh_FreeArrOfString(myCmd);
+sh_printerror(argv[0], myCmd[0], index);
 return (108);
 }
 myChild = fork();
@@ -24,12 +24,12 @@ if (myChild == 0)
 {
 if (execve(fullCmd, myCmd, environ) == -1)
 {
-free(fullCmd), fullCmd = NULL;			sh_FreeArrOfString(myCmd);
+free(fullCmd), fullCmd = NULL;
 }
 }
 else
 {
-waitpid(myChild, &status, 0);	sh_FreeArrOfString(myCmd);
+waitpid(myChild, &status, 0);
 free(fullCmd), fullCmd = NULL;
 }
 return (WEXITSTATUS(status));
