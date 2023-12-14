@@ -17,7 +17,7 @@ return (1);
 return (0);
 }
 /**
-* my_builtin_handle - handles builtin cmd
+* sh_builtin_handle - handles builtin cmd
 *
 * @cmd: char ptr parameter
 * @argv: char ptr parameter
@@ -69,14 +69,14 @@ sh_FreeArrOfstring
 exit(my_exit_value);
 }
 /**
-* my_print_env - prints env
+* sh_print_env - prints env
 *
 * @cmd: char ptr parameter
 * @status: char ptr parameter
 *
 * Return: void
 */
-void my_print_env(char **cmd, int *status)
+void sh_print_env(char **cmd, int *status)
 {
 int i;
 for (i = 0; environ[i]; i++)
@@ -84,6 +84,6 @@ for (i = 0; environ[i]; i++)
 write(STDOUT_FILENO, environ[i], str_length(environ[i]));
 write(STDOUT_FILENO, "\n", 1);
 }
-sh_FreeArrOfstring(cmd);
+sh_FreeArrOfstring
 *status = 0;
 }
