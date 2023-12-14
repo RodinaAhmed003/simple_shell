@@ -18,7 +18,7 @@ fullCmd = sh_getpath(myCmd[0]);
 if (fullCmd == NULL)
 {
 sh_printerror(argv[0], myCmd[0], index);
-		sh_FreeArrOfString(myCmd);
+		sh_FreeArrOfString;
 return (108);
 }
 
