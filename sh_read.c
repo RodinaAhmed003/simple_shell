@@ -13,7 +13,7 @@ char *sh_read(void)
 	ssize_t result;
 
 	if (isatty(STDIN_FILENO))
-		Manar_print("$Rodina_ ");
+		manar_print("$Rodina_ ");
 	result = getline(&myBuffer, &bufferLength, stdin);
 
 	if (result == -1)
