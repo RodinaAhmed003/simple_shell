@@ -1,7 +1,5 @@
 #ifndef SHELL_H_
 #define SHELL_H_
-#ifndef STR_UTILS_H
-#define STR_UTILS_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,7 +8,6 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <string.h>
-#include <str_utils.h>
 
 #define delimeter " \t\n"
 extern char **environ;
