@@ -8,6 +8,7 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <string.h>
+#include <str_utils.h>
 
 #define delimeter " \t\n"
 extern char **environ;
