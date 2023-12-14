@@ -13,26 +13,23 @@ int sh_execute(char **myCmd, char **argv, int index)
 pid_t myChild;
 int status;
 char *fullCmd;
-
 fullCmd = sh_getpath(myCmd[0]);
 if (fullCmd == NULL)
 {
-sh_printerror(argv[0], myCmd[0], index);
+sh_printerror(argv[0], myCmd[0], index);	sh_FreeArrOfString(myCmd);
 return (108);
 }
-
 myChild = fork();
-
 if (myChild == 0)
 {
 if (execve(fullCmd, myCmd, environ) == -1)
 {
-free(fullCmd), fullCmd = NULL;
+free(fullCmd), fullCmd = NULL;			sh_FreeArrOfString(myCmd);
 }
 }
 else
 {
-waitpid(myChild, &status, 0);
+waitpid(myChild, &status, 0);	sh_FreeArrOfString(myCmd);
 free(fullCmd), fullCmd = NULL;
 }
 return (WEXITSTATUS(status));
