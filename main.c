@@ -26,7 +26,8 @@ myCmd = sh_tokenizer(myLine);
 if (!myCmd)
 continue;
 if (sh_builtin_check(myCmd[0]))
-{	sh_builtin_handle(myCmd, argv, &myStatus, index);
+{	
+sh_builtin_handle(myCmd, argv, &myStatus, index);
 }
 else
 myStatus = sh_execute(myCmd, argv, index);
